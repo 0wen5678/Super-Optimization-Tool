@@ -1,0 +1,16 @@
+Please Run Universal Optimizer Using NSudo To Avoid Any Errors
+
+Please Use NSudo Carefully.
+
+
+BEFORE RUNNING IN NSUDO, PLEASE CREATE A RESTORE POINT INCASE SOMETHING BAD HAPPENED
+
+
+IF YOU WANT TO DISTRIBUTE THIS BATCH FILE
+
+ASK FOR MY PERMISSION
+
+EMAIL:
+
+
+bertingporol@gmail.com
