@@ -14,11 +14,22 @@
 : SO PLEASE USE ATLEAST WINDOWS 20H1+
 color 3
 Title Super Optimizer Tool, Its Like Tron!
-echo Hi There! %username%
+echo Hi There! color 6 %username%
 echo This Script Will Disable Windows Update And Remove Useless Microsoft Apps
-echo WARNING: BEFORE YOU CONTINUE, PLEASE CREATE A RESTORE POINT
-echo THIS PROCESS WILL TAKE A COUPLE MINUTES/HOURS DEPENDING ON YOUR HARDWARE
-Pause
+echo This Process Will Take A Few Minutes Not That Long
+pause
+cls
+echo Options:
+echo Optimize - To Optimize Your Windows Machine
+echo Restore - To Create A Restore Point (Recommended Before Optimization)
+set %p%
+if "%a%" == "Optimize" goto :choice
+if "%a%" == "Restore" goto :restore
+:restore
+echo Info: Your Restore Point Will Be Named "Optimization"
+Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Optimization", 100, 12
+goto :choice
+:choice
 echo Temporarily Stopping Services...
 net.exe stop PhoneSvc
 net.exe stop Spooler
@@ -907,6 +918,7 @@ echo OPTIMIZING NVIDIA/AMD GPUS
 echo OPTIONS ARE
 echo YES - TO OPTIMIZE
 echo SKIP - IF YOU ARE NOT AN NVIDIA/AMD USER OR YOU ARE AN INTEL HD GRAPHICS USER (just like me :/)
+set %p%
 if "%a%" == "Y" goto :choice
 if "%a%" == "N" goto :skip
 :choice
