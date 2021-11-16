@@ -12,8 +12,12 @@
 : THIS SCRIPT MAY PUT SOME RANDOM ERRORS
 : AND WILL PUT RANDOM INVALID REG ENTRIES
 : SO PLEASE USE ATLEAST WINDOWS 20H1+
+
+: Updates
+: I Just Moved To Manjaro but that Does Not Mean Ill Leave The Project.
+: (KINDA) Fixed Windows Search
 color 3
-Title Super Optimizer Tool, Its Like Tron!
+Title Super Optimizer Tool.
 echo Hi There! color 6 %username%
 echo This Script Will Disable Windows Update And Remove Useless Microsoft Apps
 echo This Process Will Take A Few Minutes Not That Long
