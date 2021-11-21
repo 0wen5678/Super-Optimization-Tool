@@ -15,6 +15,11 @@
 : AND WILL PUT RANDOM INVALID REG ENTRIES
 : SO PLEASE USE ATLEAST WINDOWS 20H1+
 
+: WARNING
+: Running NSUDO With Super Optimizer Tool May Disable WiFi In Some Builds.
+
+
+
 : Updates
 : VERSION 1.2
 : Moved To MIT License
