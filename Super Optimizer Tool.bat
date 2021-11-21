@@ -18,7 +18,7 @@
 : (KINDA) Fixed Windows Search
 color 3
 Title Super Optimizer Tool.
-echo Hi There! color 6 %username%
+echo Hi There! %username%
 echo This Script Will Disable Windows Update And Remove Useless Microsoft Apps
 echo This Process Will Take A Few Minutes Not That Long
 pause
