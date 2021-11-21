@@ -22,6 +22,7 @@
 
 : Updates
 : VERSION 1.2
+: Moved To Arch Linux (i use arch btw)
 : Moved To MIT License
 : Restore Point Bug
 : Clean MGR Autoclean (Disk Cleanup AutoClean Mode)
