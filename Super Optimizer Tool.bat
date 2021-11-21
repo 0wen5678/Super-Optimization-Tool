@@ -1,4 +1,6 @@
 @echo off
+: IGNORE BELOW (VER 1.0) 
+: BECAUSE ITS THE OLD UPDATE
 : WELCOME TO VERSION 1.0
 : PLEASE RUN THIS SCRIPT WITH NSUDO (BUILT IN THE FOLDER) TO AVOID ANY ERRORS
 : IF YOU WANT TO EDIT THE SCRIPT
@@ -14,8 +16,17 @@
 : SO PLEASE USE ATLEAST WINDOWS 20H1+
 
 : Updates
+: VERSION 1.2
+: Moved To MIT License
+: Restore Point Bug
+: Clean MGR Autoclean (Disk Cleanup AutoClean Mode)
+: Other Bug Fixes
+: Support For Windows 1903 (NOTE I Used Ameliorated Or "AME" Edition Of Windows 10 Version 1903)
+
+: Updates
+: VERSION 1.1
 : I Just Moved To Manjaro but that Does Not Mean Ill Leave The Project.
-: (KINDA) Fixed Windows Search
+: (KINDA) Fixed Windows Search (use classic shell or open shell instead)
 color 3
 Title Super Optimizer Tool.
 echo Hi There! %username%
@@ -57,9 +68,6 @@ del /s /f /q C:\WINDOWS\Prefetch
 del /s /f /q %temp%\*.*
 rd /s /q %temp%
 md %temp%
-set /p a=
-if "%a%" == "yes" goto :choice
-if "%a%" == "no" goto :exit
 echo this will depend on your ram
 fsutil behavior query memoryusage
 fsutil behavior set memoryusage 2
@@ -896,7 +904,9 @@ IF EXIST "%AppData%\Origin" (
 ) ELSE (
  echo Not Detected... Skipping
 )
-
+cls
+echo INFO: Disk Cleanup (Cleanmgr.exe) is Running In The Backround
+echo Autoclean Enabled
 cleanmgr /autoclean
 bcdedit /deletevalue useplatformclock
 bcdedit /set useplatformtick yes
