@@ -26,7 +26,7 @@ cls
 echo Options:
 echo Optimize - To Optimize Your Windows Machine
 echo Restore - To Create A Restore Point (Recommended Before Optimization)
-set %p%
+set /p a=
 if "%a%" == "Optimize" goto :choice
 if "%a%" == "Restore" goto :restore
 :restore
