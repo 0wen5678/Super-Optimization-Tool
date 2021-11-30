@@ -21,6 +21,6 @@ Windows Search Bug
 etc.
 # end
 Thanks For Using Super Optimizer Tool
-# Some Warnings
-It is not Reccomended to run Super Optimizer Tool With NSudo.
-Nsudo Will Be Deleted After An Update
+# Updates
+NSudo Deleted
+(Kinda) WiFi Fixed
