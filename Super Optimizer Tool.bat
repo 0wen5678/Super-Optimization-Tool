@@ -1,4 +1,5 @@
 @echo off
+set VERSION = 1.3
 : IGNORE BELOW (VER 1.0) 
 : BECAUSE ITS THE OLD UPDATE
 : WELCOME TO VERSION 1.0
@@ -17,6 +18,13 @@
 
 : WARNING
 : Running NSUDO With Super Optimizer Tool May Disable WiFi In Some Builds.
+
+: Updates
+: Version 1.3
+: Major Bug Fix
+: Disabled Other Stuff
+: More Registry Items
+: Other Third Party Apps Telemetry
 
 
 
