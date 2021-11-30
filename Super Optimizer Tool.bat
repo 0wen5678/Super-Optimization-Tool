@@ -44,6 +44,7 @@ set VERSION = 1.3
 color 3
 Title Super Optimizer Tool.
 echo Hi There! %username%
+echo Version %VERSION% Up-To-Date Version
 echo This Script Will Disable Windows Update And Remove Useless Microsoft Apps
 echo This Process Will Take A Few Minutes Not That Long
 pause
